@@ -6,19 +6,6 @@
 
 body {
   min-height: 100svh;
-  position: relative;
-}
-
-.container {
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 nav {
@@ -44,12 +31,7 @@ ul {
   color: #ccc;
 }
 
-.main-list:type-of-last {
-  margin-left: auto;
-}
-
-.main-list > li,
-.drop-item {
+.main-list li {
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -72,7 +54,6 @@ ul {
   transform: translateY(-3rem);
   left: -7rem;
   text-align: center;
-  vertical-align: center;
   transition: all 0.4s linear;
   z-index: -10;
   border-radius: 5px;
@@ -90,7 +71,6 @@ ul {
 }
 
 .drop-list li {
-  cursor: pointer;
   font-size: 1.1rem;
   border-bottom: 1px solid black;
   padding: 0.5rem 0;
@@ -114,7 +94,8 @@ main {
 }
 
 h1 {
-  margin: 2rem 0;
+  padding: 2rem 0;
+  font-size: 2.5rem;
 }
 
 p {
