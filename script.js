@@ -1,13 +1,13 @@
+const dropContainer = document.querySelector(`.drop-container`);
 const dropItem = document.querySelector('.drop-item');
 const dropList = document.querySelector(`.drop-list`);
 
 dropItem.addEventListener('click', e => {
-  dropList.classList.toggle('visible');
+  dropList.classList.toggle('hidden');
 });
 
 document.addEventListener('click', e => {
-  if (e.target === dropItem) return;
-  if (!dropList.contains(e.target)) dropList.classList.remove('visible');
+  if (!dropContainer.contains(e.target)) dropList.classList.add('hidden');
 });
 
 dropList.addEventListener('click', e => {
