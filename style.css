@@ -26,13 +26,14 @@ ul {
   display: flex;
   justify-content: space-around;
   gap: 4rem;
-  padding: 1rem;
+  padding: 0.8rem;
   color: #ccc;
 }
 
 .main-list li {
   font-size: 1.2rem;
   cursor: pointer;
+  text-align: center;
 }
 
 .drop-container {
@@ -59,8 +60,11 @@ ul {
   box-shadow: 1px 1px 3px #aaa, -1px 0 3px #aaa;
 }
 @media screen and (max-width: 480px) {
+  .main-list {
+    gap: 2rem;
+  }
   .drop-list {
-    left: -10rem;
+    width: 6.5rem;
   }
 }
 
